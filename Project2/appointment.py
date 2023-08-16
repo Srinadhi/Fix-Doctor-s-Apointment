@@ -1,4 +1,4 @@
-#!C:\Program Files\Python311\python.exe
+#!C:\Python311\python.exe
 print("Content-Type:text/html\n\r")
 
 import pymysql
@@ -15,7 +15,8 @@ password1=form.getvalue("password1")
 sql = "SELECT * FROM pat_details WHERE name=%s  AND  mail=%s AND password=%s"
 val = [name1,mail1,password1]
 cur.execute(sql, val)
-result = cur.fetchone()
+result = cur.fetchall()
+db.commit()
 if result:
     print("<h1 style='color:#008CBA;'><center>Welcome",name1, " please fill the details</center></h1><br><br><br>")
     print("""

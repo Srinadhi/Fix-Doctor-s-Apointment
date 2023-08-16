@@ -1,4 +1,4 @@
-#!C:\Program Files\Python311\python.exe
+#!C:\Python311\python.exe
 print("Content-Type:text/html\n\r")
 
 import pymysql

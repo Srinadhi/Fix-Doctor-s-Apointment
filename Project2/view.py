@@ -1,4 +1,4 @@
-#!C:\Program Files\Python311\python.exe
+#!C:\Python311\python.exe
 print("Content-Type:text/html\n\r")
 
 import pymysql
@@ -18,7 +18,7 @@ cur.execute(sql, val)
 result = cur.fetchone()
 x=name1.lower()
 if result:
-    print("<h1 style='color:#008CBA;'><center>Welcome Dr.",name1, " please fill the details</center></h1><br><br><br>")
+    print("<h1 style='color:#008CBA;'><center>Welcome Dr.",name1, " Your patiens for toady's appointments</center></h1><br><br><br>")
     print("""
 <style>
 th,td{
